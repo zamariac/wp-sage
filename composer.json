@@ -1,0 +1,5 @@
+{
+    "require": {
+        "roots/wp-h5bp-htaccess": "2.0.1"
+    }
+}
