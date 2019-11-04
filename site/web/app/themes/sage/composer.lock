@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f31f679ab253b90c13366000decce59b",
+    "content-hash": "e0b36c163d76674a9907b8843d3214f8",
     "packages": [
         {
             "name": "brain/hierarchy",
@@ -583,6 +583,93 @@
             "description": "The Illuminate View package.",
             "homepage": "https://laravel.com",
             "time": "2018-10-02T13:27:20+00:00"
+        },
+        {
+            "name": "mwdelaney/sage-acf-gutenberg-blocks",
+            "version": "0.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MWDelaney/sage-acf-wp-blocks.git",
+                "reference": "fced092c9b92efaaeaaa822c8b69e91d0746cf4f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MWDelaney/sage-acf-wp-blocks/zipball/fced092c9b92efaaeaaa822c8b69e91d0746cf4f",
+                "reference": "fced092c9b92efaaeaaa822c8b69e91d0746cf4f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "sage-acf-gutenberg-blocks.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael W. Delaney",
+                    "email": "michael@michaeldelaney.me"
+                },
+                {
+                    "name": "Nico Prat"
+                }
+            ],
+            "description": "Create Gutenberg blocks from Sage blade templates and ACF fields.",
+            "homepage": "https://github.com/MWDelaney/sage-acf-gutenberg-blocks",
+            "keywords": [
+                "advanced custom fields",
+                "gutenberg",
+                "wordpress"
+            ],
+            "time": "2019-03-26T15:17:49+00:00"
+        },
+        {
+            "name": "mwdelaney/sage-advanced-custom-fields",
+            "version": "1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MWDelaney/sage-advanced-custom-fields.git",
+                "reference": "f5b47d0c2e97a558e044cdb1a25c14d29a5aeffc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MWDelaney/sage-advanced-custom-fields/zipball/f5b47d0c2e97a558e044cdb1a25c14d29a5aeffc",
+                "reference": "f5b47d0c2e97a558e044cdb1a25c14d29a5aeffc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "advanced-custom-fields.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael W. Delaney",
+                    "email": "michael@michaeldelaney.me"
+                }
+            ],
+            "description": "Advanced Custom Fields local JSON setup for Sage 9 based themes",
+            "homepage": "https://github.com/MWDelaney/sage-advanced-custom-fields",
+            "keywords": [
+                "advanced custom fields",
+                "json",
+                "wordpress"
+            ],
+            "time": "2019-06-04T15:24:54+00:00"
         },
         {
             "name": "nesbot/carbon",

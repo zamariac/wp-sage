@@ -21,6 +21,27 @@ $sage_error = function ($message, $subtitle = '', $title = '') {
 };
 
 /**
+ * Register Blocks
+ * @see https://www.billerickson.net/building-gutenberg-block-acf/#register-block
+ *
+ */
+function be_register_blocks() {
+	
+	if( ! function_exists( 'acf_register_block_type' ) )
+		return;
+	acf_register_block_type( array(
+		'name'			=> 'team-member',
+		'title'			=> __( 'Team Member', 'clientname' ),
+		'render_template'	=> 'partials/block-team-member.php',
+		'category'		=> 'formatting',
+		'icon'			=> 'admin-users',
+		'mode'			=> 'auto',
+		'keywords'		=> array( 'profile', 'user', 'author' )
+	));
+}
+add_action('acf/init', 'be_register_blocks' );
+
+/**
  * Ensure compatible version of PHP is used
  */
 if (version_compare('7.1', phpversion(), '>=')) {
