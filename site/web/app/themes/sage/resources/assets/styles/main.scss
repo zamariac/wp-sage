@@ -36,7 +36,8 @@ div.wrap.container {
   background-position: center center;
   border-radius: 0;
   position: relative;
-  height: 450px;
+  padding: 17em;
+  margin-bottom: 0;
 
   .overlay {
     background: rgba(0, 0, 0, 0.5);
@@ -52,45 +53,123 @@ div.wrap.container {
   display: flex;
   color: #fff;
   justify-content: center;
+  width: 80%;
+  margin: auto;
 
   .left-section {
-    width: 31%;
-    padding: 1em 10% 1em 0;
+    width: 50%;
+    padding: 3em 2em;
 
     h1 {
       line-height: 1.1em;
+      font-size: 3em;
+      letter-spacing: 1px;
     }
 
     h3 {
       font-size: 0.9em;
-      line-height: 1em;
+      line-height: 17px;
+      padding-right: 3em;
+      letter-spacing: 1px;
+      font-weight: 400;
     }
   }
 
   .right-section {
-    font-size: 0.7em;
+    font-size: 0.8em;
     display: flex;
     flex-direction: column;
-    width: 12%;
+    width: 50%;
     justify-content: space-evenly;
     text-align: left;
-    padding-top: 2.5em;
-  }
+    padding: 3em 2em;
 
-  img {
-    padding-top: 1em;
+    p :nth-child(2) {
+      padding: 3em 5em 1em;
+      letter-spacing: 1px;
+      line-height: 18px;
+    }
+
+    p :nth-child(3) {
+      padding: 0 5em 0;
+    }
   }
 }
 
 .review-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 
   span {
     display: flex;
     flex-direction: column;
-    width: 15%;
+    text-align: center;
+    width: 18%;
     font-size: 0.9em;
-    color: #656565;
+    color: #666;
+    padding: 1em;
+
+    p {
+      display: flex;
+      flex-direction: column;
+
+      img {
+        margin: 1em auto;
+      }
+    }
+  }
+}
+
+.membership-types {
+  padding-top: 50px;
+
+  .blurb {
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+
+    p {
+      margin: 10px 0 0;
+    }
+
+    p:nth-child(2) {
+      font-size: 0.5em;
+    }
+  }
+
+  .types {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    span:nth-child(1) {
+      border-top: solid 10px #0fb682;
+      padding-bottom: 2em;
+    }
+
+    .type-container {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin: 2em;
+      border-top: solid 10px #eee;
+      border-bottom: solid 1px #eee;
+      border-left: solid 1px #eee;
+      border-right: solid 1px #eee;
+      border-radius: 8px;
+      width: 27%;
+
+      :nth-child(1) {
+        position: relative;
+
+        img {
+          position: absolute;
+          top: -11px;
+          right: 0;
+        }
+      }
+    }
   }
 }
