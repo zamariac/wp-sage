@@ -31,7 +31,7 @@
         <?php the_field('membership_a'); ?>
         <a href="#" class="button"> <?php the_field('button_a'); ?></a>
       </span>
-      <span class="type-container middle">
+      <span class="type-container right">
         <?php the_field('membership_b'); ?>
         <a href="#" class="button"> <?php the_field('button_b'); ?></a>
       </span>
