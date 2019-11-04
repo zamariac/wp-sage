@@ -1,7 +1,8 @@
 @extends('layouts.app')
-
 @section('content')
   @include('partials.page-header')
+
+<h1> pizza </h1>
 
   @if (!have_posts())
     <div class="alert alert-warning">
@@ -16,3 +17,4 @@
 
   {!! get_the_posts_navigation() !!}
 @endsection
+
