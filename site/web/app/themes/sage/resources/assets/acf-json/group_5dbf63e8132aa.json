@@ -400,7 +400,7 @@
         {
             "key": "field_5dbfad5df9c16",
             "label": "Info Card Text 1",
-            "name": "",
+            "name": "info_card_text_1",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -762,5 +762,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1572894039
+    "modified": 1572904884
 }

@@ -41,6 +41,37 @@
       </span>
     </div>
   </div>
+  <div class="info-cards">
+    <div class="blurb">
+      <?php the_field('info_cards_blurb'); ?>
+    </div>
+    <div class="info-cards-container">
+      <div class="individual-card">
+        <?php $id = get_field('info_card_1'); $size = 'full';  
+        $alt = get_post_meta( $id, '_wp_attachment_image_alt', true); 
+        echo wp_get_attachment_image( $id, $size, "", ['alt' => $alt, 'class' => 'custom'] ); ?>
+        <?php the_field('info_card_text_1'); ?>
+      </div>
+      <div class="individual-card">
+        <?php $id = get_field('info_card_2'); $size = 'full';  
+        $alt = get_post_meta( $id, '_wp_attachment_image_alt', true); 
+        echo wp_get_attachment_image( $id, $size, "", ['alt' => $alt, 'class' => 'custom'] ); ?>
+        <?php the_field('info_card_text_2'); ?>
+      </div>
+      <div class="individual-card">
+        <?php $id = get_field('info_card_3'); $size = 'full';  
+        $alt = get_post_meta( $id, '_wp_attachment_image_alt', true); 
+        echo wp_get_attachment_image( $id, $size, "", ['alt' => $alt, 'class' => 'custom'] ); ?>
+        <?php the_field('info_card_text_3'); ?>
+      </div>
+      <div class="individual-card">
+        <?php $id = get_field('info_card_4'); $size = 'full';  
+        $alt = get_post_meta( $id, '_wp_attachment_image_alt', true); 
+        echo wp_get_attachment_image( $id, $size, "", ['alt' => $alt, 'class' => 'custom'] ); ?>
+        <?php the_field('info_card_text_4'); ?>
+      </div>
+    </div>
+</div>
 </section>
 
   @while(have_posts()) @php the_post() @endphp
