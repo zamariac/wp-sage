@@ -36,8 +36,16 @@ div.wrap.container {
   background-position: center center;
   border-radius: 0;
   position: relative;
-  padding: 17em;
+  padding: 17em 10em;
   margin-bottom: 0;
+
+  @media (max-width: 600px) {
+    padding: 17em 10em;
+  }
+
+  @media (max-width: 496px) {
+    padding: 16em 12em;
+  }
 
   .overlay {
     background: rgba(0, 0, 0, 0.5);
@@ -53,17 +61,58 @@ div.wrap.container {
   display: flex;
   color: #fff;
   justify-content: center;
-  width: 80%;
-  margin: auto;
+  width: 90%;
+  margin: 20px auto 40px;
+
+  @media (max-width: 1200px) {
+    margin: 20px auto 0;
+  }
+
+  @media (max-width: 1000px) {
+    justify-content: left;
+  }
+
+  @media (max-width: 900px) {
+    margin: 0 auto;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 
   .left-section {
-    width: 50%;
+    width: 45%;
     padding: 3em 2em;
+
+    @media (max-width: 1000px) {
+      width: 60%;
+    }
+
+    @media (max-width: 900px) {
+      width: 75%;
+    }
+
+    @media (max-width: 768px) {
+      width: 80%;
+      padding: 2em 0 1em;
+    }
+
+    @media (max-width: 700px) {
+      width: 90%;
+    }
+
+    @media (max-width: 478px) {
+      width: 93%;
+    }
 
     h1 {
       line-height: 1.1em;
       font-size: 3em;
       letter-spacing: 1px;
+
+      @media (max-width: 768px) {
+        font-size: 2.5em;
+      }
     }
 
     h3 {
@@ -79,10 +128,28 @@ div.wrap.container {
     font-size: 0.8em;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 31%;
     justify-content: space-evenly;
     text-align: left;
-    padding: 3em 2em;
+    padding: 5em 3em;
+
+    @media (max-width: 1000px) {
+      width: 37%;
+    }
+
+    @media (max-width: 900px) {
+      width: 40%;
+    }
+
+    @media (max-width: 768px) {
+      width: 60%;
+      padding: 0;
+    }
+
+    @media (max-width: 496px) {
+      width: 75%;
+      padding: 2em 0;
+    }
 
     p :nth-child(2) {
       padding: 3em 5em 1em;
@@ -100,6 +167,12 @@ div.wrap.container {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: 80%;
+  margin: auto;
+
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
 
   span {
     display: flex;
@@ -110,6 +183,22 @@ div.wrap.container {
     color: #666;
     padding: 1em;
 
+    @media (max-width: 900px) {
+      width: 20%;
+    }
+
+    @media (max-width: 900px) {
+      width: 25%;
+    }
+
+    @media (max-width: 600px) {
+      width: 30%;
+    }
+
+    @media (max-width: 496px) {
+      display: none;
+    }
+
     p {
       display: flex;
       flex-direction: column;
@@ -119,16 +208,34 @@ div.wrap.container {
       }
     }
   }
+
+  span.mobile-none {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
 }
 
-.membership-types {
-  padding-top: 50px;
+div.membership-types {
+  padding: 60px 0 60px;
+  width: 90%;
+  margin: auto;
 
-  .blurb {
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
+
+  div.blurb {
     text-align: center;
     font-size: 2em;
     letter-spacing: 1px;
     margin-bottom: 15px;
+
+    @media (max-width: 600px) {
+      width: 90%;
+      margin: auto;
+      line-height: 35px;
+    }
 
     p {
       margin: 10px 0 0;
@@ -143,6 +250,10 @@ div.wrap.container {
     display: flex;
     flex-direction: row;
     justify-content: center;
+
+    @media (max-width: 1000px) {
+      flex-wrap: wrap;
+    }
 
     span:nth-child(1) {
       border-top: solid 10px #0fb682;
@@ -160,6 +271,18 @@ div.wrap.container {
       border-right: solid 1px #eee;
       border-radius: 8px;
       width: 27%;
+
+      @media (max-width: 1000px) {
+        width: 40%;
+      }
+
+      @media (max-width: 900px) {
+        width: 60%;
+      }
+
+      @media (max-width: 600px) {
+        width: 80%;
+      }
     }
 
     .left {
@@ -256,6 +379,10 @@ div.wrap.container {
     .right {
       padding-top: 1em;
 
+      @media (max-width: 900px) {
+        padding-bottom: 2em;
+      }
+
       p:nth-child(1) {
         font-size: 1.5em;
         font-weight: 700;
@@ -351,5 +478,229 @@ div.wrap.container {
       text-decoration: none;
       background-color: #fff;
     }
+  }
+}
+
+div.info-cards {
+  padding: 60px 0 0;
+  border-top: solid 1px #85959d;
+  width: 90%;
+  margin: auto;
+
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
+
+  div.memo {
+    width: 60%;
+    margin: 0 auto 60px;
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 1px;
+
+    @media (max-width: 768px) {
+      width: 90%;
+    }
+
+    div.memo > p:nth-child(2) {
+      font-size: 0.5em;
+    }
+  }
+
+  div.info-cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    div.individual-card-1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 20px 0 10px;
+
+      @media (max-width: 1000px) {
+        flex-direction: column;
+      }
+
+      div.info-text {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 38%;
+
+        @media (max-width: 1000px) {
+          width: 60%;
+          margin: auto;
+        }
+
+        p {
+          font-weight: 500;
+        }
+
+        p:nth-child(1) {
+          margin-bottom: 0;
+          margin-top: 10px;
+        }
+
+        p:nth-child(2) {
+          font-size: 1.5em;
+          font-weight: 700;
+        }
+
+        ul {
+          list-style: none;
+          padding: 0;
+
+          li::before {
+            content: "\2713";
+            font-weight: 900;
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+
+    div.individual-card-2 {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      margin: 20px 0 10px;
+
+      @media (max-width: 1000px) {
+        flex-direction: column;
+      }
+
+      div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 38%;
+
+        @media (max-width: 1000px) {
+          width: 60%;
+          margin: auto;
+        }
+
+        p:nth-child(1) {
+          margin-bottom: 0;
+          margin-top: 10px;
+        }
+
+        p:nth-child(2) {
+          font-weight: 700;
+          font-size: 1.5em;
+        }
+
+        ul {
+          list-style: none;
+          padding: 0;
+
+          li::before {
+            content: "\2713";
+            font-weight: 900;
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+div.icons-container {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 90%;
+  justify-content: center;
+  align-items: baseline;
+  border-bottom: solid 1px #85959d;
+  padding-bottom: 50px;
+
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  div.individual-icon-container {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+    margin: 2em;
+    justify-content: justify;
+
+    @media (max-width: 768px) {
+      width: 50%;
+      margin: auto;
+    }
+  }
+}
+
+div.join-us {
+  margin: 50px auto;
+  text-align: center;
+  width: 56%;
+
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+
+  div.join {
+    text-align: center;
+    font-size: 1.8em;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    line-height: 35px;
+  }
+}
+
+#homepage > div.icons-container > div > img {
+  margin: 10px auto;
+}
+
+#homepage > div.icons-container > div > p {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+#homepage > div.join-us > div > p:nth-child(2) {
+  font-size: 0.7em;
+  padding-bottom: 10px;
+}
+
+#homepage > div.info-cards > div.memo > p:nth-child(2) {
+  font-size: 0.5em;
+}
+
+#homepage > div.join-us > a {
+  background-color: #042bdc;
+  padding: 15px 35px;
+  margin: 20px 0;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+#homepage > div.join-us a:hover {
+  background-color: #f57706;
+}
+
+#homepage > div.membership-types > div.types > span > a:hover {
+  background-color: #f57706;
+}
+
+#homepage > div.info-cards > div.info-cards-container > div > img {
+  @media (max-width: 1000px) {
+    margin: 10px auto 0;
+  }
+
+  @media (max-width: 600px) {
+    width: 80%;
+    height: auto;
   }
 }
