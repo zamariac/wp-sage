@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/app/themes/barebones/static/js/main.chunk.js",
+    "main.js.map": "/app/themes/barebones/static/js/main.chunk.js.map",
+    "runtime-main.js": "/app/themes/barebones/static/js/bundle.js",
+    "runtime-main.js.map": "/app/themes/barebones/static/js/bundle.js.map",
+    "index.php": "/app/themes/barebones/index.php"
+  },
+  "entrypoints": [
+    "static/js/bundle.js",
+    "static/js/main.chunk.js"
+  ]
+}
